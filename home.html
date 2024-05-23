@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styleFORHOME.css" />
+	<link rel="stylesheet" href="TransitionEffectForAllWebpages.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>HGM's Home</title>
+  </head>
+  <body class="vh-100">
+  <header>
+    <img src="images/HGM.png" alt="HGM Logo" class="header-image">
+  </header>
+    <!-- ito ung nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+            <!-- dito ung logo -->
+          <a class="navbar-brand fs-4" href="index.html">
+			<img src="images/imglogo.png" alt="Logo" style="width: 40px; height: auto; margin-right: 8px;">
+			<b>HGM</b>
+		  </a>
+          <!-- toggle button -->
+			<button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" onclick="toggleSidebar()">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+          <!-- ito ung sa sidebar -->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+            <!-- ito ung sidebar header -->
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation Bar</h5>
+              <button type="button" class="btn-close btn-close-white shadown-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!-- SIDE BAR BODY TO -->
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+              <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                <li class="nav-item mx-2">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="products.html">Products</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                  </li>
+              </ul>
+                <form class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3" id="searchForm">
+                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                 <button id="searchButton" class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+           <div class="containerforproducts">
+        <section>
+            <h1><b>HARRY'S GAMING MOUSE</b></h1>
+	    <br>
+	    <div class="video-container">
+             <video controls muted autoplay loop width="640"  height="360"  poster="images/imglogo.png" aria-label="Product demonstration video" class="featured-product-video"> 
+  		<source src="images/vidfeaturedproductINDEX.mp4" type="video/mp4">
+  		<source src="images/vidfeaturedproductINDEX.webm" type="video/webm"> 
+ 		 Your browser doesn't support the video tag.
+             </video>
+
+            </div>
+            <br>
+            <button id="scrollDownButton">PRESS TO SEE GAMING MICE</button> 
+            <br>
+            <br>
+            <button id="scrollDownButtonBreakingNews">PRESS TO SEE BREAKING NEWS</button><br>
+            <br>
+            <br>
+	    <br>
+            <br>
+            <h2><b>Machenike M7 Pro</b></h2>
+            <br>
+	    <img src="images/1.png" alt="Logo" class="hmouse" style="width: 300px; height: 200px; margin-right: 8px;">
+            <br>
+            <br>
+            <button class="get-it-now-button" onclick="window.location.href='products.html'">GET IT NOW</button>
+            <br>
+            <br>
+            <p><b>UNLEASH YOUR GAMING PROWESS WITH THE MACHENIKE M7 PRO WIRED GAMING MOUSE. THIS SLEEK AND ERGONOMIC MOUSE OFFERS UNPARALLELED PRECISION AND RESPONSIVENESS THANKS TO ITS ADVANCED SENSOR AND CUSTOMIZABLE DRIVERS. WITH ITS WIRED CONNECTION, YOU'LL EXPERIENCE LIGHTNING-FAST RESPONSE TIMES AND UNINTERRUPTED GAMEPLAY. DOMINATE THE COMPETITION AND ELEVATE YOUR GAMING EXPERIENCE WITH THE MACHENIKE M7 PRO.</b></p>
+            
+             <br>
+            <h2><b>Machenike L8 Pro</b></h2>
+            <br>
+	    <img src="images/2.png" alt="Logo" class="hmouse" style="width: 300px; height: 280px; margin-right: 8px;">
+            <br>
+            <br>
+            <button class="get-it-now-button" onclick="window.location.href='products.html'">GET IT NOW</button>
+            <br>
+            <br>
+            <p><b>THE MACHENIKE L8 PRO GAMING MOUSE OFFERS UNMATCHED PRECISION AND PERFORMANCE FOR GAMERS. FEATURING A PAW3395 SENSOR, IT ENSURES LIGHTNING-FAST RESPONSIVENESS AND PIXEL-PERFECT ACCURACY. WITH WIRED AND 2.4GHZ WIRELESS OPTIONS SUPPORTING UP TO 8K AND 2K RESOLUTIONS RESPECTIVELY, IT DELIVERS STUNNING VISUALS AND SMOOTH GAMEPLAY. CUSTOMIZABLE DRIVERS ALLOW FOR PERSONALIZED SETTINGS, WHILE ITS ERGONOMIC DESIGN ENSURES COMFORT DURING LONG GAMING SESSIONS. DOMINATE THE COMPETITION AND ELEVATE YOUR GAMING EXPERIENCE WITH THE MACHENIKE L8 PRO GAMING MOUSE.</b></p>
+           
+            <br>
+            <h2><b>Machenike M8 Gen2</b></h2>
+            <br>
+	    <img src="images/3.png" alt="Logo" class="hmouse" style="width: 300px; height: 280px; margin-right: 8px;">
+            <br>
+            <br>
+            <button class="get-it-now-button" onclick="window.location.href='products.html'">GET IT NOW</button>
+            <br>
+            <br>
+            <p><b>ELEVATE YOUR GAMING EXPERIENCE WITH THE MACHENIKE M8 GEN2 GAMING MOUSE. DESIGNED FOR PRECISION AND PERFORMANCE, IT OFFERS ERGONOMIC COMFORT FOR EXTENDED PLAY. CHOOSE WIRED OR 2.4GHZ WIRELESS CONNECTION FOR FLEXIBILITY. CUSTOMIZE SETTINGS WITH THE M810/M840 MODELS' DRIVERS, OPTIMIZING DPI AND BUTTONS FOR YOUR GAMEPLAY STYLE. DOMINATE THE COMPETITION WITH MACHENIKE M8 GEN2 - YOUR ULTIMATE GAMING WEAPON.</b></p>
+
+            <br>
+            <h2><b>Machenike M8</b></h2>
+            <br>
+	    <img src="images/4.png" alt="Logo" class="hmouse" style="width: 300px; height: 280px; margin-right: 8px;">
+            <br>
+            <br>
+            <button class="get-it-now-button" onclick="window.location.href='products.html'">GET IT NOW</button>
+            <br>
+            <br>
+            <p><b>ELEVATE YOUR GAMING WITH THE MACHENIKE M8 GAMING MOUSE. CHOOSE BETWEEN WIRED OR 2.4GHZ WIRELESS CONNECTION FOR UNINTERRUPTED PLAY. CUSTOMIZE SETTINGS WITH THE POWERFUL M830 DRIVER. ITS ERGONOMIC DESIGN AND REPLACEABLE COVER ENSURE COMFORT AND PERSONALIZATION. DOMINATE THE DIGITAL REALM WITH PRECISION AND PERFORMANCE, ONLY WITH MACHENIKE.</b></p>
+
+            <br>
+            <h2><b>Machenike M5</b></h2>
+            <br>
+	    <img src="images/5.png" alt="Logo" class="hmouse" style="width: 300px; height: 280px; margin-right: 8px;">
+            <br>
+            <br>
+            <button class="get-it-now-button" onclick="window.location.href='products.html'">GET IT NOW</button>
+            <br>
+            <br>
+            <p><b>UNLEASH YOUR GAMING PROWESS WITH THE MACHENIKE M5 GAMING MOUSE. OFFERING BOTH WIRED AND 2.4GHZ WIRELESS CONNECTIVITY, CUSTOMIZABLE SETTINGS VIA DRIVER SOFTWARE, AND ERGONOMIC DESIGN FOR RIGHT-HANDED GAMERS, THE M5 ENSURES PRECISION, SPEED, AND COMFORT DURING INTENSE GAMING SESSIONS. DOMINATE THE BATTLEFIELD WITH MACHENIKE - WHERE PRECISION MEETS POWER.</b></p>
+
+            <br>
+            <h2><b>Machenike M2</b></h2>
+            <br>
+	    <img src="images/6.png" alt="Logo" class="hmouse" style="width: 300px; height: 280px; margin-right: 8px;">
+            <br>
+            <br>
+            <button class="get-it-now-button" onclick="window.location.href='products.html'">GET IT NOW</button>
+            <br>
+            <br>
+            <p><b>EXPERIENCE PRECISION AND CONTROL WITH THE MACHENIKE M2 GAMING MOUSE. ITS WIRED CONNECTION ENSURES LAG-FREE PERFORMANCE, WHILE ITS ERGONOMIC DESIGN KEEPS YOU COMFORTABLE DURING LONG GAMING SESSIONS. WITH ADVANCED TRACKING TECHNOLOGY AND PLUG-AND-PLAY FUNCTIONALITY, THE MACHENIKE M2 IS YOUR KEY TO DOMINATING THE VIRTUAL BATTLEFIELD.</b></p>
+            
+            <br>
+            <h2 id=target> </h2>
+            <h2><b>Machenike M6 Ultra Light</b></h2>
+            <br>
+	    <img src="images/7.png" alt="highlight" id="targetImage" class="hmouse" style="width: 300px; height: 300px; margin-right: 8px;">
+            <br>
+            <br>
+            <button class="get-it-now-button" onclick="window.location.href='products.html'">GET IT NOW</button>
+            <br>
+            <br>
+            <p><b>THE MACHENIKE M610/M620 GAMING MOUSE OFFERS LIGHTWEIGHT PRECISION AND CUSTOMIZABLE CONTROL FOR GAMERS. WITH A WEIGHT OF JUST 60G AND RESPONSIVE BUTTONS, IT ENABLES SWIFT MOVEMENTS AND OPTIMAL PERFORMANCE DURING INTENSE GAMING SESSIONS. EQUIPPED WITH A POWERFUL DRIVER AND CUSTOMIZABLE SETTINGS, THIS MOUSE EMPOWERS GAMERS TO DOMINATE THE BATTLEFIELD WITH EASE.</b></p>
+
+	    <br>
+            <h2><b>Machenike M7</b></h2>
+            <br>
+	    <img src="images/8.png" alt="Logo" class="hmouse" style="width: 350px; height: 250px; margin-right: 8px;">
+            <br>
+            <br>
+            <button class="get-it-now-button" onclick="window.location.href='products.html'">GET IT NOW</button>
+            <br>
+            <br>
+            <p><b>THE MACHENIKE M7 GAMING MOUSE IS A VERSATILE PERIPHERAL OFFERING BOTH WIRED AND 2.4GHZ WIRELESS CONNECTIVITY OPTIONS. WITH ITS ERGONOMIC DESIGN AND ADVANCED DRIVER SOFTWARE EXCLUSIVE TO THE M720 MODEL, IT PROVIDES CUSTOMIZABLE FEATURES TO ENHANCE YOUR GAMING PERFORMANCE AND COMFORT, MAKING IT THE ULTIMATE CHOICE FOR GAMERS OF ALL LEVELS.</b></p>
+            </section>
+        <aside>
+
+                            <h3><b>Why Choose HGM?</b></h3>
+                <img src="images/8.png" alt="Featured HGM Mouse" class="aside-image" >
+                 <ul>
+                     <li><b>HGM MICE OFFER SUPERIOR PRECISION, ERGONOMIC COMFORT, AND CUSTOMIZABLE PERFORMANCE, MAKING THEM A RELIABLE AND DURABLE CHOICE FOR GAMERS OF ALL LEVELS. THEIR WIDE RANGE OF OPTIONS AND ENDORSEMENT BY PROFESSIONAL GAMERS FURTHER SOLIDIFY THEIR POSITION AS TOP-TIER GAMING PERIPHERALS.</b></li>
+                     <br>
+
+                 </ul>
+        </aside>
+
+        <article>
+            <h4 id=target2> </h4>
+            <br>
+            <br>
+            <br>
+             <img src="images/BREAKINGNEWS.gif" alt="Breaking News" width="660" height="400">
+             <h4><b>Legion Explores Potential Partnership with HGM, Aims to Elevate Gaming Experience</b></h4>
+            <p>Sources reveal that Legion, the renowned gaming PC brand, is in talks with HGM (Harry's Gaming Mouse) to forge a strategic partnership. This collaboration seeks to combine Legion's high-performance hardware with HGM's precision gaming mice, potentially creating a comprehensive and immersive gaming ecosystem. Industry insiders speculate that this partnership could lead to exclusive co-branded products and bundled offerings, further enhancing the appeal of both brands to the gaming community.</p>
+        </article>
+
+
+    </div>
+     </main>
+	 
+	   <footer class="footer">
+    <div class="footer-container">
+      <div class="row">
+        <div class="col-md-6">
+          <p><b>&copy; 2024 Harry's Gaming Mouse (HGM). All rights reserved.</b></p>
+        </div>
+        <div class="col-md-6">
+		<form id="subscribeForm" action="#" method="post">
+			<div class="input-group mb-3">
+				<input id="emailInput" type="email" class="form-control" placeholder="Enter your email for discounts!" aria-label="Recipient's email" aria-describedby="button-addon2">
+				<button class="btn btn-outline-secondary" type="submit" id="button-addon2">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to Top"><i class="fas fa-arrow-up"></i></button>
+      
+     <script src="jsFORHOME.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- aboutus.html and contactus.html uses the styleFORHOME.css to be efficient -->
+    <link rel="stylesheet" href="styleFORHOME.css" />
+	<link rel="stylesheet" href="TransitionEffectForAllWebpages.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>HGM's About Us</title>
+  </head>
+  <body class="vh-100">
+   <header>
+    <img src="images/HGM.png" alt="HGM Logo" class="header-image">
+  </header>
+    <!-- ito ung nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+            <!-- dito ung logo -->
+          <a class="navbar-brand fs-4" href="index.html">
+			<img src="images/imglogo.png" alt="Logo" style="width: 40px; height: auto; margin-right: 8px;">
+			<b>HGM</b>
+		  </a>
+          <!-- toggle button -->
+			<button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" onclick="toggleSidebar()">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+          <!-- ito ung sa sidebar -->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+            <!-- ito ung sidebar header -->
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation Bar</h5>
+              <button type="button" class="btn-close btn-close-white shadown-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!-- SIDE BAR BODY TO -->
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+              <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="products.html">Products</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                  </li>
+              </ul>
+                <form class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3" id="searchForm">
+                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                 <button id="searchButton" class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+           <div class="containerforproducts">
+        <article>
+             <img src="images/hgmstore.png" alt="Breaking News" width="660" height="400">
+			 <br><br>
+             <h4><b>HGM (Harry's Gaming Mouse): History on How It Started</b></h4>
+            <p>IN 2024, FUELED BY A LIFELONG PASSION FOR GAMING, HARRY LOURDS DE LEON FOUNDED HGM (HARRY'S GAMING MOUSE) IN QUEZON CITY.  INITIALLY A SMALL ONLINE STORE SPECIALIZING IN HIGH-PERFORMANCE GAMING MICE, HGM QUICKLY GAINED A LOYAL FOLLOWING DUE TO DE LEON'S COMMITMENT TO QUALITY, INNOVATION, AND THE NEEDS OF THE GAMING COMMUNITY.</p>
+        </article>
+		
+		        <aside>
+		  <h3><b>MEET THE OWNER</b></h3>
+                  <br>
+                <img src="images/ceo.jpg" alt="Featured HGM Mouse" class="aside-image">
+				<br>
+                 <ul>
+                     <li><b> In 2024, 19-year-old Harry Lourds De Leon founded HGM (Harry's Gaming Mouse) in Quezon City, driven by his passion for gaming. Despite starting as a small online store, HGM quickly gained a loyal following due to Harry's commitment to quality and innovation. Balancing his entrepreneurial venture with his studies in information technology, Harry's deep understanding of gamers' needs allowed him to create high-performance, ergonomic gaming mice. His dedication and connection to the gaming community have made HGM a success, demonstrating that passion and perseverance can turn dreams into reality. </b></li>
+        </aside>
+    </div>
+     </main>
+	 
+	   <footer class="footer">
+    <div class="footer-container">
+      <div class="row">
+        <div class="col-md-6">
+          <p><b>&copy; 2024 Harry's Gaming Mouse (HGM). All rights reserved.</b></p>
+        </div>
+        <div class="col-md-6">
+		<form id="subscribeForm" action="#" method="post">
+			<div class="input-group mb-3">
+				<input id="emailInput" type="email" class="form-control" placeholder="Enter your email for discounts!" aria-label="Recipient's email" aria-describedby="button-addon2">
+				<button class="btn btn-outline-secondary" type="submit" id="button-addon2">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+   <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to Top"><i class="fas fa-arrow-up"></i></button>
+      
+     <script src="jsFORABOUTUS.js"></script>
+  </body>
+</html>

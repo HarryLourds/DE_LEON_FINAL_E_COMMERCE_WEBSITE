@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="TransitionEffectForAllWebpages.css" />
+    <title>HGM's Gratitude to Buyer</title>
+</head>
+
+    <style>
+  body {
+    background: url('images/imgbghome.png') rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure body fills viewport height */
+  }
+
+.container {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  /* Remove border-radius, max-width, margin, padding, and border */
+  max-height: 400px; /* You might want to adjust this if needed */
+  display: flex;
+  flex-direction: column;
+  /* Remove background-color and box-shadow */
+
+}
+
+
+.container p {
+  margin-top: 10px; /* Adjust the value as needed */
+}
+
+
+.container h1 {
+  margin-bottom: -10px; /* Adjust the value as needed */
+}
+.container h4 {
+  margin-top: -10px;     /* Adjust as needed */
+  margin-bottom: -3px; 
+}
+
+
+
+
+
+        h2 {
+            text-align: center;
+        }
+        
+            h4 {
+            text-align: center;
+        }
+
+
+
+        
+.imglogo {
+  width: 100px; 
+  height: 100px; 
+  margin: 0 auto 0px;   /* Center horizontally, add margin below */
+  display: block;       /* Ensure it's a block element for centering */
+}
+
+.wrapper {
+  position: relative;    
+  display: flex;         
+  flex-direction: column; 
+  align-items: center;
+  /* Remove margin-bottom and gap for better control */
+  /* margin-bottom: 20px; */
+  /* gap: 20px; */
+}
+
+
+    .button-container {
+  display: flex;
+  justify-content: space-around; /* Evenly space the buttons */
+  margin-top: 20px; /* Optional spacing from the container */
+  width: 100%; /* Make buttons take full width */
+  gap: 20px; 
+}
+
+/* Button styles */
+.change-order {
+  width: 50%; /* Adjusted width for better spacing */
+  background-color: #fff;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;  /* Add font-family */
+}
+
+.change-order:hover {
+  background-color: #ADD8E6;
+  color: #000000;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="wrapper"> 
+  <img src="images/imglogo.png" alt="Your Logo" class="imglogo">
+<div class="container">
+  <h1>Thank you for buying!</h1>
+  <h2>Welcome to HGM Family</h2>
+   <h4>Check your email for order details.</h4>
+</div>
+  </div>
+  <div class="button-container">
+    <button button class="change-order" onclick="window.location.href='index.html'">Go Back to HGM</button>
+  </div>
+
+<script src="forCONFETTI/confetti.js"></script>
+<script>
+        // start
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  Stop
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 15000); // 5000 is time that after 15 second stop the confetti ( 5000 = 5 sec)
+        };
+
+        start();
+        stop();
+</script>
+</body>
+</html>

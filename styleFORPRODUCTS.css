@@ -1,0 +1,400 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('images/imgbghome.png') rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+.header-image {
+    width: 100%; 
+    height: auto;
+    display: block;
+    max-width: 1834px;
+    /* Remove text-align and margin: 0 auto */
+}
+
+/* for imglogo on index */
+.responsivelogo-img {
+    width: 40px; /* Adjust as needed */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.responsivelogo-img:hover {
+    transform: scale(1.1); /* Scale the image by 10% on hover */
+}
+
+
+.container {
+    width: 50vw;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.container h1 {
+    color: #000000;
+}
+
+
+
+header {
+	width: 100%; 
+    display: flex;     /* Use Flexbox for layout */
+    justify-content: space-between; /* Align items to the start and end */
+    align-items: center;  /* Vertically center items */
+
+}
+
+header .shopping {
+	margin-top: 12px;
+    position: relative;
+    text-align: right;
+	padding: 10px 20px; /* Adjust padding as needed */
+}
+
+header .shopping i {
+    font-size: 3rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+header .shopping i:hover {
+    color: #ADD8E6;
+}
+
+header .shopping span {
+    position: absolute;
+    top: -3px;
+    left: 57%;
+    background: #444444;
+    padding: 3px 10px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.Cart {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    height: 100vh;
+    background-color: #dadada;
+    border-left: 1px solid #dadada;
+    transition: 0.5s;
+    overflow-y: auto; /* Add scrollbar when content overflows vertically */
+}
+
+
+.active .Cart {
+    left: calc(100% - 500px);
+	z-index: 10; /* Set a higher z-index value for the cart */
+
+}
+
+.active .container {
+    transform: translateX(-200px);
+}
+
+.Cart h1 {
+    color: #000000;
+    font-weight: 300;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Cart h1 .clearCart {
+    font-size: 1rem;
+    color: red;
+    cursor: pointer;
+    transition: color 0.25s ease;
+}
+
+.Cart h1 .clearCart:hover {
+    color: darkred;
+}
+
+.Cart .checkOut {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Cart .checkOut div {
+    background-color: #ADD8E6;
+    color: #000000;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Cart .checkOut div:nth-child(2) {
+    background-color: #1c1f25;
+    color: #efefef;
+}
+
+.container .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.list .item {
+    text-align: center;
+    background-color: #000000;
+    padding: 20px;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+    letter-spacing: 1px;
+    transition: all 0.25s ease;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.list .item:hover {
+    background-color: #ADD8E6;
+}
+
+.list .item:hover .title {
+    color: #000000;
+    font-weight: 600;
+}
+
+.list .item:hover .price {
+    color: #000000;
+}
+
+.list .item img {
+    width: 90%;
+    height: 250px;
+}
+
+.list .item .title {
+    font-weight: 600;
+    color: #efefef;
+}
+
+.list .item .price {
+    margin: 10px;
+    color: #efefef;
+}
+
+.list .item button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #efefef;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.bg-gray {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.list .item button:hover {
+    background-color: #000000;
+    color: #ADD8E6;
+}
+
+.listCart li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+
+.listCart li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCart li img {
+    width: 90%;
+}
+
+.listCart .count {
+    margin: 0 10px;
+    color: #1c1f25;
+    font-size: 1.2rem;
+}
+
+.CartTitle,
+.CartPrice {
+    color: #1c1f25;
+}
+
+.CartButton {
+    width: 28px;
+    height: 28px;
+    color: #efefef;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Media Queries for Medium Screens (max-width: 991px) */
+@media (max-width: 991px) {
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+
+
+	.sidebar {
+		background-color: rgba(255, 255, 255, 0.15);
+		backdrop-filter: blur(10px);
+		transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+		transform: translateX(-100%); /* Start with sidebar hidden offscreen */
+	}
+
+	.sidebar.show {
+		transform: translateX(0); /* Show sidebar by moving it to the left */
+	}
+
+	.sidebar.hide {
+		transform: translateX(-100%); /* Hide sidebar by moving it offscreen to the left */
+	}
+}
+
+/* Media Queries for Mobile Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 90vw;
+    }
+
+    .container .list {
+        grid-template-columns: 1fr;
+    }
+
+    .Cart {
+        width: 100%;
+    }
+
+    .active .Cart {
+        left: 0;
+    }
+
+    .active .container {
+        transform: none;
+    }
+
+    header {
+        grid-template-columns: 1fr 40px;
+    }
+
+    header .shopping i {
+        font-size: 3rem;
+    }
+
+    .Cart .checkOut div {
+        height: 60px;
+    }
+
+    .list .item img {
+        height: auto;
+    }
+}
+
+/*for scroll button */
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ADD8E6;
+    color: #000000;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0; /* Initial opacity set to 0 */
+    transition: opacity 0.3s ease; /* Transition for fade animation */
+    z-index: 9; /* Ensure it's above other elements */
+}
+
+
+/*for scroll button there is another part also at the top */
+.scroll-to-top-btn i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scroll-to-top-btn.show {
+    opacity: 1; /* Opacity set to 1 when 'show' class is added */
+}
+
+
+
+.footer {
+  background-color: #000; /* Black background color */
+  color: #ADD8E6; /* Text color */
+  padding: 20px 0; /* Add padding top and bottom */
+  margin-top: 50px; /* Add margin to push it down */
+}
+
+.footer-container {
+  width: 60%; /* Set width of the footer container */
+  margin: auto; /* Center the footer container horizontally */
+}
+
+/* Styles for the subscribe button */
+.footer .btn-outline-secondary {
+  color: #fff; /* White text color */
+}
+
+.footer .btn-outline-secondary:hover {
+  background-color: #ADD8E6; /* Blue background color */
+  color: #000; /* Black text color */
+}
+
+/* Style for the search button with ID 'searchButton' */
+#searchButton {
+  background-color: black; /* Change the background color */
+  color: white;          /* Change the text color */
+  border-color: white;    /* Change the outline color */
+}
+
+#searchButton:hover {
+  background-color: #ADD8E6; /* Change the background color on hover */
+  color: black;          /* Change the text color on hover */
+  border-color: black;    /* Change the outline color on hover */
+}

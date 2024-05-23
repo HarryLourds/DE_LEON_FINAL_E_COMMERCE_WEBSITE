@@ -1,0 +1,106 @@
+body{
+    background: url('images/imgbghome.png') rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow: auto; /* Ensure body is scrollable */
+}
+
+@media(max-width: 991px){
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+header {
+    width: 100%; /* Ensure the header takes up the full viewport width */
+    text-align: center; /* Center the content within the header */
+}
+
+.header-image {
+    width: 100%; 
+    height: auto;
+    display: block;
+    max-width: 1834px;
+    margin: 0 auto; /* This centers the image horizontally */
+}
+
+section {
+
+  /* OR */
+  margin-top: -80px; /* Adjust the value to your preference */
+    width: 100%;
+    height: 100vh;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align to the top */
+    align-items: center;
+    text-white;
+    font-size: 1.5em;
+}
+
+/* for imglogo on index */
+.responsivelogo-img {
+    width: 10%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.responsivelogo-img:hover {
+    transform: scale(1.1); /* Scale the image by 10% on hover */
+}
+
+.sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+    transform: translateX(-100%); /* Start with sidebar hidden offscreen */
+}
+
+.sidebar.show {
+    transform: translateX(0); /* Show sidebar by moving it to the left */
+}
+
+.sidebar.hide {
+    transform: translateX(-100%); /* Hide sidebar by moving it offscreen to the left */
+}
+
+
+.footer {
+  background-color: #000; /* Black background color */
+  color: #ADD8E6; /* Text color */
+  padding: 20px 0; /* Add padding top and bottom */
+  margin-top: 50px; /* Add margin to push it down */
+}
+
+.footer-container {
+  width: 60%; /* Set width of the footer container */
+  margin: auto; /* Center the footer container horizontally */
+}
+
+/* Styles for the subscribe button */
+.footer .btn-outline-secondary {
+  color: #fff; /* White text color */
+}
+
+.footer .btn-outline-secondary:hover {
+  background-color: #ADD8E6; /* Blue background color */
+  color: #000; /* Black text color */
+}
+
+/* Style for the search button with ID 'searchButton' */
+#searchButton {
+  background-color: black; /* Change the background color */
+  color: white;          /* Change the text color */
+  border-color: white;    /* Change the outline color */
+}
+
+#searchButton:hover {
+  background-color: #ADD8E6; /* Change the background color on hover */
+  color: black;          /* Change the text color on hover */
+  border-color: black;    /* Change the outline color on hover */
+}

@@ -1,0 +1,225 @@
+body {
+  background: url('images/imgbghome.png') rgba(0,0,0,0.3);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  overflow: auto; /* Ensure body is scrollable */
+}
+
+@media(max-width: 991px){
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+header {
+    width: 100%; /* Ensure the header takes up the full viewport width */
+    text-align: center; /* Center the content within the header */
+}
+
+.header-image {
+    width: 100%; 
+    height: auto;
+    display: block;
+    max-width: 1834px;
+    margin: 0 auto; /* This centers the image horizontally */
+}
+
+.sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+    transform: translateX(-100%); /* Start with sidebar hidden offscreen */
+}
+
+.sidebar.show {
+    transform: translateX(0); /* Show sidebar by moving it to the left */
+}
+
+.sidebar.hide {
+    transform: translateX(-100%); /* Hide sidebar by moving it offscreen to the left */
+}
+
+.containerforpayment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  flex: 1;
+  background: rgba(0, 0, 0, 0.7); /* Adjusted to darken the background */
+  overflow: auto; /* Allow container to be scrollable */
+}
+
+.containerforpayment form {
+  padding: 20px;
+  width: 700px;
+  background: #000;
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.containerforpayment form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.containerforpayment form .row .col {
+  flex: 1 1 45%; /* Adjusted to fit two columns */
+}
+
+.containerforpayment form .row .col .title {
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.containerforpayment form .row .col .inputBox {
+  margin: 10px 0;
+}
+
+.containerforpayment form .row .col .inputBox span {
+  margin-bottom: 10px;
+  display: block;
+  color: #fff;
+}
+
+.containerforpayment form .row .col .inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  color: #000;
+  background-color: #fff;
+}
+
+.containerforpayment form .row .col .inputBox input:focus {
+  border: 1px solid #000;
+}
+
+.containerforpayment form .row .col .flex {
+  display: flex;
+  gap: 15px;
+}
+
+.containerforpayment form .row .col .flex .inputBox {
+  margin-top: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #ADD8E6;
+  color: #000;
+}
+
+.footer {
+  background-color: #000; /* Black background color */
+  color: #ADD8E6; /* Text color */
+  padding: 20px 0; /* Add padding top and bottom */
+  margin-top: 50px; /* Add margin to push it down */
+}
+
+.footer-container {
+  width: 60%; /* Set width of the footer container */
+  margin: auto; /* Center the footer container horizontally */
+}
+
+/* Styles for the subscribe button */
+.footer .btn-outline-secondary {
+  color: #fff; /* White text color */
+}
+
+.footer .btn-outline-secondary:hover {
+  background-color: #ADD8E6; /* Blue background color */
+  color: #000; /* Black text color */
+}
+
+/* Style for the search button with ID 'searchButton' */
+#searchButton {
+  background-color: black; /* Change the background color */
+  color: white;          /* Change the text color */
+  border-color: white;    /* Change the outline color */
+}
+
+#searchButton:hover {
+  background-color: #ADD8E6; /* Change the background color on hover */
+  color: black;          /* Change the text color on hover */
+  border-color: black;    /* Change the outline color on hover */
+}
+
+/* Center the button */
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+  justify-content: center;
+  align-items: center; 
+}
+
+
+
+/* Button styles */
+.change-order {
+  width: 44%;
+  background-color: #ADD8E6;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.change-order:hover {
+  background-color: #0000FF;
+  color: #fff;
+}
+
+/* Button styles */
+.clear-order {
+  width: 44%;
+  background-color: #8B0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+   margin-top: 10px; /* pupush neto ung clear sa baba*/
+}
+
+
+
+.clear-order:hover {
+  background-color: #FF0000;
+  color: #fff;
+}
